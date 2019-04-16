@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="header-top__i">
+                    <div class="header-top-lang">
+                        <div onlick="changeLang('en')" class="header-top-lang__item header-top-lang__item--active">En</div>
+                        <div onlick="changeLang('Ru')" class="header-top-lang__item">Ru</div>
+                        <form action="/index.php?route=common/language/language" method="post" class="header-top-lang__form" id="form-language">
+                            <input type="hidden" name="code" value="" id="form-language-code" />
+                            <input type="hidden" name="redirect" value="/">
+                        </form>
+                    </div>
+
+                    <div class="header__menu">
+                        <a href="">Оплата</a>
+                        <a href="">Доставка</a>
+                        <a href="tel:0931112345">0931112345</a>
+                    </div>
+    
+                    <div class="header-top__callback" onclick="toggleModal('callback')">
+                        <span class="icon-call"></span> Обратный звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="header-middle">
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+
+                <a href="" calss="header-middle__logo">
+                    <img src="/assets/img/logo.svg" />
+                </a>
+
+                <div class="cart">
+                    <span class="icon-cart"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-menu">
+                    <div class="header-menu-item">
+                        <div class="header-menu-item__link">Женщинам</div>
+                        <div class="header-menu-item__content">
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="header-menu-item">
+                    <div class="header-menu-item__link">Женщинам</div>
+                    <div class="header-menu-item__content">
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                    </div>
+            </div>
+            <div class="header-menu-item">
+                <div class="header-menu-item__link">Женщинам</div>
+                <div class="header-menu-item__content">
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                </div>
+        </div>
+        <div class="header-menu-item">
+            <div class="header-menu-item__link">Женщинам</div>
+            <div class="header-menu-item__content">
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+            </div>
+    </div>
+    <div class="header-menu-item">
+        <div class="header-menu-item__link">Женщинам</div>
+        <div class="header-menu-item__content">
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+        </div>
+</div>
+
+                <div class="header-search">
+                    <div class="header-search__btn" onclick="toggleTopSearch()">
+                        <span class="icon-search"></span>
+                    </div>
+                    <form class="header-search__content" method="GET" action="/search">
+                        <input type="text" name="s" placeholder="поиск...">
+                        <button type="submit"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quick-checkout" class="checkout container">
+
+        <div id="warning" class="row">                <div id="content" class="col-sm-12">      <h1 class="title">Оформление заказа</h1>
+                  <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 "><div id="tmd_cart">
+            <form action="https://convers.stpnnk.top/index.php?route=tmdqc/tmdcheckout/edit" method="post" enctype="multipart/form-data">
+              <div class="table-responsive table_cart">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                                      <th colspan="5" class="text-center">Корзина заказа</th>
+                                  </tr>
+                              </thead>
+                                  <thead>
+                    <tr>
+                                                      <td class="text-center">Фото</td>
+                                                                                                      <td class="text-left">Название товара</td>
+                                                                                                                                                                                                                                      <td class="text-left">Количество</td>
+                                                                                      <td class="text-right">Цена</td>
+                                                      <td class="text-right">
+                          Стоимость                </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                                  <tr>
+                                                  <td class="text-center">                  <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                        </td>
+                                                                              <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                                                              </td>
+                                                                                                                                                                                                                      <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                          <input type="text" name="quantity[360]" value="1" size="1" class="form-control">
+                          <span class="input-group-btn">
+                          <button type="submit" class="cart_btn"> data-toggle="tooltip" title="Обновить"&gt;<i class="fa fa-refresh"></i></button>
+                          <button type="button" class="cart_btn" data-toggle="tooltip" title="Удалить" onclick="cartremove('360');"><i class="fa fa-times-circle"></i></button></span></div></td>
+                                                                                      <td class="text-right">15 000 грн</td>
+                                                      <td class="text-right item_total">
+                          <span>15 000 грн</span>
+                      </td>
+                    </tr>
+                                  <tr>
+                                                  <td class="text-center">                  <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                        </td>
+                                                                              <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                                                              </td>
+                                                                                                                                                                                                                      <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                          <input type="text" name="quantity[361]" value="1" size="1" class="form-control">
+                          <span class="input-group-btn">
+                          <button type="submit" class="cart_btn"> data-toggle="tooltip" title="Обновить"&gt;<i class="fa fa-refresh"></i></button>
+                          <button type="button" class="cart_btn" data-toggle="tooltip" title="Удалить" onclick="cartremove('361');"><i class="fa fa-times-circle"></i></button></span></div></td>
+                                                                                      <td class="text-right">15 000 грн</td>
+                                                      <td class="text-right item_total">
+                          <span>15 000 грн</span>
+                      </td>
+                    </tr>
+                                  <tr>
+                                                  <td class="text-center">                  <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                        </td>
+                                                                              <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                                                              </td>
+                                                                                                                                                                                                                      <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                          <input type="text" name="quantity[362]" value="1" size="1" class="form-control">
+                          <span class="input-group-btn">
+                          <button type="submit" class="cart_btn"> data-toggle="tooltip" title="Обновить"&gt;<i class="fa fa-refresh"></i></button>
+                          <button type="button" class="cart_btn" data-toggle="tooltip" title="Удалить" onclick="cartremove('362');"><i class="fa fa-times-circle"></i></button></span></div></td>
+                                                                                      <td class="text-right">15 000 грн</td>
+                                                      <td class="text-right item_total">
+                          <span>15 000 грн</span>
+                      </td>
+                    </tr>
+                                              </tbody>
+                </table>
+              </div>
+            </form>
+                                    <div class="row">
+              <div class="col-sm-12 total_info">
+                              <p>Сумма:
+                  45 000 грн</p>
+                              <p>Новая Почта:
+                  30 грн</p>
+                              <p>Итого:
+                  45 030 грн</p>
+                          </div>
+            </div>
+                              <script>
+                  function cartremove(key){
+                      $.ajax({
+                          url: 'index.php?route=checkout/cart/remove',
+                          type: 'post',
+                          data: 'key=' + key,
+                          dataType: 'json',
+                          beforeSend: function() {
+                              $('#cart > button').button('loading');
+                          },
+                          complete: function() {
+                              $('#cart > button').button('reset');
+                          },
+                          success: function(json) {
+                              setTimeout(function () {
+                                  $('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+                              }, 100);
+      
+                              if (getURLVar('route') == 'tmdqc/tmdcheckout' || window.location.href.indexOf("checkout") > -1) {
+                                  location = 'index.php?route=tmdqc/tmdcheckout';
+                              } else {
+                                  $('#cart > ul').load('index.php?route=common/cart/info ul li');
+                              }
+                          }
+                      });
+                  }
+                  </script>
+      <!-- 			<script>
+                          if ($("input:checkbox").is(":checked")) {
+                              $("input:checkbox").parent().addClass("active");
+                              console.log("da");
+                          }
+                  </script>
+                  <script>
+                      $(document).ready(function() {
+      
+      
+                          if ($("input:checkbox").is(":checked")) {
+                              $("input:checkbox").parent().addClass("active");
+                              console.log("da");
+                          }
+      
+                          $("label").click(function() {
+                              var input = $(this).find("input:checkbox");
+      
+                              if (input.is(":checked")) {
+                                  $(this).addClass("active");
+                              } else {
+                                  $(this).removeClass("active");
+                              }
+                          });
+      
+                      });
+                  </script> --></div> </div></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 "> <div id="tmd_login"><div id="typeaccount"><div class="clearfix">
+          <div class="panel panel-default">
+              <div class="panel-heading">Клиент <span class="pull-right"><a data-toggle="modal" data-target="#myModal" id="tmdqclogin">Вход</a></span></div>
+          </div>
+        <div class="col-sm-12 type_acc ">
+            <label>
+                      <input type="radio" name="account" value="register">
+                      Регистрация клинта</label>
+                        <label>
+                      <input type="radio" name="account" value="guest" checked="checked">
+                      Гостевой заказ</label>
+                </div>
+      </div>
+      
+      <!-- Start: injected by AdGuard -->
+      <script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1554880949.590959&amp;sb=0&amp;domain=convers.stpnnk.top&amp;mask=103" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <!-- End: injected by AdGuard -->
+      <script type="text/javascript"><!--
+      $('input[name=\'account\']:checked').trigger('click');
+      //--></script></div><div id="accountcontent"><div class="row">
+        <div class="col-sm-12">
+          <fieldset>
+                  <div id="account" class="panel panel-default">
+                      <div class="panel-heading">Ваши данные</div>
+                      <div class="form-group" style="display: none;">
+                          <label class="control-label">Группа клиентов</label>
+                                                                  <div class="radio">
+                              <label>
+                                  <input type="radio" name="customer_group_id" value="1" checked="checked">
+                                  Default</label>
+                          </div>
+                                                              </div>
+                      <div class="form-group hide">
+              <label class="control-label" for="input-payment-company">Компания</label>
+              <input type="text" name="company" value="" placeholder="Компания" id="input-payment-company" class="form-control">
+           </div><div class="form-group required">
+              <label class="control-label" for="input-payment-firstname">Имя</label>
+              <input type="text" name="firstname" value="" placeholder="Имя" id="input-payment-firstname" class="form-control">
+           </div><div class="form-group hide"><label class="control-label" for="input-payment-lastname">Фамилия</label>
+              <input type="text" name="lastname" value="" placeholder="Фамилия" id="input-payment-lastname" class="form-control"></div><div class="form-group  hide">
+                      <label class="control-label" for="input-payment-zone">Регион</label>
+                      <select name="zone_id" id="input-payment-zone" class="form-control"><option value=""> --- Выберите --- </option><option value="191">Australian Capital Territory</option><option value="192">New South Wales</option><option value="193">Northern Territory</option><option value="194">Queensland</option><option value="195">South Australia</option><option value="196">Tasmania</option><option value="197">Victoria</option><option value="198">Western Australia</option></select>
+                      </div><div class="form-group hide">
+              <label class="control-label" for="input-payment-fax">Факс</label>
+              <input type="text" name="fax" value="" placeholder="Факс" id="input-payment-fax" class="form-control">
+           </div><div class="form-group  hide"><label class="control-label" for="input-payment-country">Страна</label><select name="country_id" id="input-payment-country" class="form-control"><option value=""> --- Выберите --- </option><option value="244">Aaland Islands</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="252">Ascension Island (British)</option><option value="13" selected="selected">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="245">Bonaire, Sint Eustatius and Saba</option><option value="27">Bosnia and Herzegovina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">Brunei Darussalam</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="251">Canary Islands</option><option value="39">Cape Verde</option><option value="40">Cayman Islands</option><option value="41">Central African Republic</option><option value="42">Chad</option><option value="43">Chile</option><option value="44">China</option><option value="45">Christmas Island</option><option value="46">Cocos (Keeling) Islands</option><option value="47">Colombia</option><option value="48">Comoros</option><option value="49">Congo</option><option value="50">Cook Islands</option><option value="51">Costa Rica</option><option value="52">Cote D'Ivoire</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="246">Curacao</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="237">Democratic Republic of Congo</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands (Malvinas)</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="74">France, Metropolitan</option><option value="75">French Guiana</option><option value="76">French Polynesia</option><option value="77">French Southern Territories</option><option value="126">FYROM</option><option value="78">Gabon</option><option value="79">Gambia</option><option value="80">Georgia</option><option value="81">Germany</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greece</option><option value="85">Greenland</option><option value="86">Grenada</option><option value="87">Guadeloupe</option><option value="88">Guam</option><option value="89">Guatemala</option><option value="256">Guernsey</option><option value="90">Guinea</option><option value="91">Guinea-Bissau</option><option value="92">Guyana</option><option value="93">Haiti</option><option value="94">Heard and Mc Donald Islands</option><option value="95">Honduras</option><option value="96">Hong Kong</option><option value="97">Hungary</option><option value="98">Iceland</option><option value="99">India</option><option value="100">Indonesia</option><option value="101">Iran (Islamic Republic of)</option><option value="102">Iraq</option><option value="103">Ireland</option><option value="254">Isle of Man</option><option value="104">Israel</option><option value="105">Italy</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="257">Jersey</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="253">Kosovo, Republic of</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Lao People's Democratic Republic</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libyan Arab Jamahiriya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova, Republic of</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="242">Montenegro</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="112">North Korea</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="247">Palestinian Territory, Occupied</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russian Federation</option><option value="177">Rwanda</option><option value="178">Saint Kitts and Nevis</option><option value="179">Saint Lucia</option><option value="180">Saint Vincent and the Grenadines</option><option value="181">Samoa</option><option value="182">San Marino</option><option value="183">Sao Tome and Principe</option><option value="184">Saudi Arabia</option><option value="185">Senegal</option><option value="243">Serbia</option><option value="186">Seychelles</option><option value="187">Sierra Leone</option><option value="188">Singapore</option><option value="189">Slovak Republic</option><option value="190">Slovenia</option><option value="191">Solomon Islands</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">South Georgia &amp; South Sandwich Islands</option><option value="113">South Korea</option><option value="248">South Sudan</option><option value="195">Spain</option><option value="196">Sri Lanka</option><option value="249">St. Barthelemy</option><option value="197">St. Helena</option><option value="250">St. Martin (French part)</option><option value="198">St. Pierre and Miquelon</option><option value="199">Sudan</option><option value="200">Suriname</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Swaziland</option><option value="203">Sweden</option><option value="204">Switzerland</option><option value="205">Syrian Arab Republic</option><option value="206">Taiwan</option><option value="207">Tajikistan</option><option value="208">Tanzania, United Republic of</option><option value="209">Thailand</option><option value="210">Togo</option><option value="211">Tokelau</option><option value="212">Tonga</option><option value="213">Trinidad and Tobago</option><option value="255">Tristan da Cunha</option><option value="214">Tunisia</option><option value="215">Turkey</option><option value="216">Turkmenistan</option><option value="217">Turks and Caicos Islands</option><option value="218">Tuvalu</option><option value="219">Uganda</option><option value="220">Ukraine</option><option value="221">United Arab Emirates</option><option value="222">United Kingdom</option><option value="223">United States</option><option value="224">United States Minor Outlying Islands</option><option value="225">Uruguay</option><option value="226">Uzbekistan</option><option value="227">Vanuatu</option><option value="228">Vatican City State (Holy See)</option><option value="229">Venezuela</option><option value="230">Viet Nam</option><option value="231">Virgin Islands (British)</option><option value="232">Virgin Islands (U.S.)</option><option value="233">Wallis and Futuna Islands</option><option value="234">Western Sahara</option><option value="235">Yemen</option><option value="238">Zambia</option><option value="239">Zimbabwe</option></select> </div><div class="form-group hide">
+              <label class="control-label" for="input-payment-address-2">Адрес 2</label>
+              <input type="text" name="address_2" value="" placeholder="Адрес 2" id="input-payment-address-2" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-payment-postcode">Индекс</label>
+              <input type="text" name="postcode" value="" placeholder="Индекс" id="input-payment-postcode" class="form-control">
+           </div><div class="form-group required">
+              <label class="control-label" for="input-payment-telephone">Телефон</label>
+              <input type="text" name="telephone" value="" placeholder="Телефон" id="input-payment-telephone" class="form-control">
+           </div><div class="form-group">
+              <label class="control-label" for="input-payment-email">E-Mail</label>
+              <input type="text" name="email" value="" placeholder="E-Mail" id="input-payment-email" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-payment-city">Город</label>
+              <input type="text" name="city" value="" placeholder="Город" id="input-payment-city" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-payment-address-1">Адрес</label>
+              <input type="text" name="address_1" value="" placeholder="Адрес" id="input-payment-address-1" class="form-control">
+           </div>							</div>
+                  <div id="address">
+                      <div class="form-group"></div>
+                                  </div>
+              </fieldset>
+        </div>
+      </div>
+      <!--<div class="buttons">
+        <div class="pull-right">
+          <input type="button" value="Продолжить" id="button-guest" data-loading-text="Загрузка..." class="btn btn-primary" />
+        </div>
+      </div>-->
+      
+      <!-- Start: injected by AdGuard -->
+      <script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1554880949.590959&amp;sb=0&amp;domain=convers.stpnnk.top&amp;mask=103" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <!-- End: injected by AdGuard -->
+      <script type="text/javascript"><!--
+      // Sort the custom fields
+      $('#account .form-group[data-sort]').detach().each(function() {
+          if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
+              $('#account .form-group').eq($(this).attr('data-sort')).before(this);
+          }
+      
+          if ($(this).attr('data-sort') > $('#account .form-group').length) {
+              $('#account .form-group:last').after(this);
+          }
+      
+          if ($(this).attr('data-sort') < -$('#account .form-group').length) {
+              $('#account .form-group:first').before(this);
+          }
+      });
+      
+      $('#address .form-group[data-sort]').detach().each(function() {
+          if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#address .form-group').length) {
+              $('#address .form-group').eq($(this).attr('data-sort')).before(this);
+          }
+      
+          if ($(this).attr('data-sort') > $('#address .form-group').length) {
+              $('#address .form-group:last').after(this);
+          }
+      
+          if ($(this).attr('data-sort') < -$('#address .form-group').length) {
+              $('#address .form-group:first').before(this);
+          }
+      });
+      
+      $('#accountcontent input[name=\'customer_group_id\']').on('change', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/checkout/customfield&customer_group_id=' + this.value,
+              dataType: 'json',
+              success: function(json) {
+                  $('#accountcontent .custom-field').hide();
+                  $('#accountcontent .custom-field').removeClass('required');
+      
+                  for (i = 0; i < json.length; i++) {
+                      custom_field = json[i];
+      
+                      $('#payment-custom-field' + custom_field['custom_field_id']).show();
+      
+                      if (custom_field['required']) {
+                          $('#payment-custom-field' + custom_field['custom_field_id']).addClass('required');
+                      } else {
+                          $('#payment-custom-field' + custom_field['custom_field_id']).removeClass('required');
+                      }
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      $('#accountcontent input[name=\'customer_group_id\']:checked').trigger('change');
+      //--></script>
+      <script type="text/javascript"><!--
+      $('#accountcontent button[id^=\'button-payment-custom-field\']').on('click', function() {
+          var node = this;
+      
+          $('#form-upload').remove();
+      
+          $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+      
+          $('#form-upload input[name=\'file\']').trigger('click');
+      
+          if (typeof timer != 'undefined') {
+              clearInterval(timer);
+          }
+      
+          timer = setInterval(function() {
+              if ($('#form-upload input[name=\'file\']').val() != '') {
+                  clearInterval(timer);
+      
+                  $.ajax({
+                      url: 'index.php?route=tool/upload',
+                      type: 'post',
+                      dataType: 'json',
+                      data: new FormData($('#form-upload')[0]),
+                      cache: false,
+                      contentType: false,
+                      processData: false,
+                      beforeSend: function() {
+                          $(node).button('loading');
+                      },
+                      complete: function() {
+                          $(node).button('reset');
+                      },
+                      success: function(json) {
+                          $(node).parent().find('.text-danger').remove();
+      
+                          if (json['error']) {
+                              $(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
+                          }
+      
+                          if (json['success']) {
+                              alert(json['success']);
+      
+                              $(node).parent().find('input[name^=\'custom_field\']').attr('value', json['code']);
+                          }
+                      },
+                      error: function(xhr, ajaxOptions, thrownError) {
+                          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                      }
+                  });
+              }
+          }, 500);
+      });
+      //--></script>
+      <script type="text/javascript"><!--
+      $('.date').datetimepicker({
+          pickTime: false
+      });
+      
+      $('.time').datetimepicker({
+          pickDate: false
+      });
+      
+      $('.datetime').datetimepicker({
+          pickDate: true,
+          pickTime: true
+      });
+      //--></script>
+      <script type="text/javascript"><!--
+      $('#accountcontent select[name=\'country_id\']').on('change', function() {
+          let val = $('#tmd_delivery_address input[name="shipping_address"]:checked').val();
+          if( val ) {
+              $.ajax({
+                  url: 'index.php?route=tmdqc/shipping_method/set',
+                  type: 'post',
+                  data: $('#accountcontent input[type=\'text\'], #accountcontent input[type=\'date\'], #accountcontent input[type=\'datetime-local\'], #accountcontent input[type=\'time\'], #accountcontent input[type=\'password\'], #accountcontent input[type=\'checkbox\']:checked, #accountcontent input[type=\'radio\']:checked, #accountcontent input[type=\'hidden\'], #accountcontent textarea, #accountcontent select'),
+                  beforeSend: function () {
+                      $('#accountcontent select[name=\'country_id\']').after(' <i class="fa fa-circle-o-notch fa-spin"></i>');
+                  },
+                  complete: function () {
+                      $('.fa-spin').remove();
+                  },
+                  success: function (json) {
+      
+                      $.ajax({
+                          url: 'index.php?route=tmdqc/shipping_method',
+                          dataType: 'html',
+                          success: function (html) {
+                              $('#tmd_shipping_method').html(html);
+                          }
+                      })
+                  },
+                  error: function (xhr, ajaxOptions, thrownError) {
+                      alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                  }
+              });
+          }
+      
+          $.ajax({
+              url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
+              dataType: 'json',
+              beforeSend: function() {
+                  $('#accountcontent select[name=\'country_id\']').after(' <i class="fa fa-circle-o-notch fa-spin"></i>');
+              },
+              complete: function() {
+                  $('.fa-spin').remove();
+              },
+              success: function(json) {
+                  if (json['postcode_required'] == '1') {
+                      $('#accountcontent input[name=\'postcode\']').parent().addClass('required');
+                  } else {
+                      $('#accountcontent input[name=\'postcode\']').parent().removeClass('required');
+                  }
+      
+                  html = '<option value=""> --- Выберите --- </option>';
+      
+                  if (json['zone'] && json['zone'] != '') {
+                      for (i = 0; i < json['zone'].length; i++) {
+                          html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+      
+                          if (json['zone'][i]['zone_id'] == '') {
+                              html += ' selected="selected"';
+                          }
+      
+                          html += '>' + json['zone'][i]['name'] + '</option>';
+                      }
+                  } else {
+                      html += '<option value="0" selected="selected"> --- Не выбрано --- </option>';
+                  }
+      
+      
+      
+                  $('#accountcontent select[name=\'zone_id\']').html(html);
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      $('#accountcontent select[name=\'country_id\']').trigger('change');
+      //--></script></div></div><div id="tmd_delivery_address"><div class="panel panel-default">
+              <div class="panel-heading">Delivery Address</div>
+      </div>
+      
+      <form class="form-horizontal clearfix block">
+                  <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="shipping_address" value="1" checked="checked">
+                      Мой адрес совпадает с адресом доставки.</label>
+              </div>
+              <div id="guestform" class="hide col-sm-12">
+        <div class="form-group required">
+              <label class="control-label" for="input-shipping-city">Город</label>
+                      <input type="text" name="city" value="" placeholder="Город" id="input-shipping-city" class="form-control">
+           </div><div class="form-group required">
+              <label class="control-label" for="input-shipping-address-1">Адрес</label>
+                    <input type="text" name="address_1" value="" placeholder="Адрес" id="input-shipping-address-1" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-shipping-address-2">Адрес 2</label>
+                    <input type="text" name="address_2" value="" placeholder="Адрес 2" id="input-shipping-address-2" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-shipping-company">Компания</label>
+                      <input type="text" name="company" value="" placeholder="Компания" id="input-shipping-company" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-shipping-postcode">Индекс</label>
+                      <input type="text" name="postcode" value="" placeholder="Индекс" id="input-shipping-postcode" class="form-control">
+           </div><div class="form-group hide">
+              <label class="control-label" for="input-shipping-lastname">Фамилия</label>
+                    <input type="text" name="lastname" value="" placeholder="Фамилия" id="input-shipping-lastname" class="form-control">
+           </div><div class="form-group  hide">
+                      <label class="control-label" for="input-shipping-zone">Регион</label>
+                      <select name="zone_id" id="input-shipping-zone" class="form-control"><option value=""> --- Выберите --- </option><option value="191">Australian Capital Territory</option><option value="192">New South Wales</option><option value="193">Northern Territory</option><option value="194">Queensland</option><option value="195">South Australia</option><option value="196">Tasmania</option><option value="197">Victoria</option><option value="198">Western Australia</option></select>
+                      </div><div class="form-group  hide"><label class="control-label" for="input-shipping-country">Страна</label><select name="country_id" id="input-shipping-country" class="form-control"><option value=""> --- Выберите --- </option><option value="244">Aaland Islands</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="252">Ascension Island (British)</option><option value="13" selected="selected">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="245">Bonaire, Sint Eustatius and Saba</option><option value="27">Bosnia and Herzegovina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">Brunei Darussalam</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="251">Canary Islands</option><option value="39">Cape Verde</option><option value="40">Cayman Islands</option><option value="41">Central African Republic</option><option value="42">Chad</option><option value="43">Chile</option><option value="44">China</option><option value="45">Christmas Island</option><option value="46">Cocos (Keeling) Islands</option><option value="47">Colombia</option><option value="48">Comoros</option><option value="49">Congo</option><option value="50">Cook Islands</option><option value="51">Costa Rica</option><option value="52">Cote D'Ivoire</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="246">Curacao</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="237">Democratic Republic of Congo</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands (Malvinas)</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="74">France, Metropolitan</option><option value="75">French Guiana</option><option value="76">French Polynesia</option><option value="77">French Southern Territories</option><option value="126">FYROM</option><option value="78">Gabon</option><option value="79">Gambia</option><option value="80">Georgia</option><option value="81">Germany</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greece</option><option value="85">Greenland</option><option value="86">Grenada</option><option value="87">Guadeloupe</option><option value="88">Guam</option><option value="89">Guatemala</option><option value="256">Guernsey</option><option value="90">Guinea</option><option value="91">Guinea-Bissau</option><option value="92">Guyana</option><option value="93">Haiti</option><option value="94">Heard and Mc Donald Islands</option><option value="95">Honduras</option><option value="96">Hong Kong</option><option value="97">Hungary</option><option value="98">Iceland</option><option value="99">India</option><option value="100">Indonesia</option><option value="101">Iran (Islamic Republic of)</option><option value="102">Iraq</option><option value="103">Ireland</option><option value="254">Isle of Man</option><option value="104">Israel</option><option value="105">Italy</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="257">Jersey</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="253">Kosovo, Republic of</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Lao People's Democratic Republic</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libyan Arab Jamahiriya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova, Republic of</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="242">Montenegro</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="112">North Korea</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="247">Palestinian Territory, Occupied</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russian Federation</option><option value="177">Rwanda</option><option value="178">Saint Kitts and Nevis</option><option value="179">Saint Lucia</option><option value="180">Saint Vincent and the Grenadines</option><option value="181">Samoa</option><option value="182">San Marino</option><option value="183">Sao Tome and Principe</option><option value="184">Saudi Arabia</option><option value="185">Senegal</option><option value="243">Serbia</option><option value="186">Seychelles</option><option value="187">Sierra Leone</option><option value="188">Singapore</option><option value="189">Slovak Republic</option><option value="190">Slovenia</option><option value="191">Solomon Islands</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">South Georgia &amp; South Sandwich Islands</option><option value="113">South Korea</option><option value="248">South Sudan</option><option value="195">Spain</option><option value="196">Sri Lanka</option><option value="249">St. Barthelemy</option><option value="197">St. Helena</option><option value="250">St. Martin (French part)</option><option value="198">St. Pierre and Miquelon</option><option value="199">Sudan</option><option value="200">Suriname</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Swaziland</option><option value="203">Sweden</option><option value="204">Switzerland</option><option value="205">Syrian Arab Republic</option><option value="206">Taiwan</option><option value="207">Tajikistan</option><option value="208">Tanzania, United Republic of</option><option value="209">Thailand</option><option value="210">Togo</option><option value="211">Tokelau</option><option value="212">Tonga</option><option value="213">Trinidad and Tobago</option><option value="255">Tristan da Cunha</option><option value="214">Tunisia</option><option value="215">Turkey</option><option value="216">Turkmenistan</option><option value="217">Turks and Caicos Islands</option><option value="218">Tuvalu</option><option value="219">Uganda</option><option value="220">Ukraine</option><option value="221">United Arab Emirates</option><option value="222">United Kingdom</option><option value="223">United States</option><option value="224">United States Minor Outlying Islands</option><option value="225">Uruguay</option><option value="226">Uzbekistan</option><option value="227">Vanuatu</option><option value="228">Vatican City State (Holy See)</option><option value="229">Venezuela</option><option value="230">Viet Nam</option><option value="231">Virgin Islands (British)</option><option value="232">Virgin Islands (U.S.)</option><option value="233">Wallis and Futuna Islands</option><option value="234">Western Sahara</option><option value="235">Yemen</option><option value="238">Zambia</option><option value="239">Zimbabwe</option></select> </div><div class="form-group required">
+              <label class="control-label" for="input-shipping-firstname">Имя</label>
+                    <input type="text" name="firstname" value="" placeholder="Имя" id="input-shipping-firstname" class="form-control">
+           </div>  	</div>
+      </form>
+      
+      <!-- Start: injected by AdGuard -->
+      <script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1554880949.590959&amp;sb=0&amp;domain=convers.stpnnk.top&amp;mask=103" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <!-- End: injected by AdGuard -->
+      <script type="text/javascript"><!--
+          $('#tmd_delivery_address input[name="shipping_address"]').on('click',function(){
+          var val = $('#tmd_delivery_address input[name="shipping_address"]:checked').val();
+          if(val){
+                  $('#guestform').addClass('hide');
+          }else{
+              $('#guestform').removeClass('hide');
+          }
+      });
+      
+          
+      </script>
+      <script type="text/javascript"><!--
+      // Sort the custom fields
+      $('#tmd_delivery_address .form-group[data-sort]').detach().each(function() {
+          if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#tmd_delivery_address .form-group').length) {
+              $('#tmd_delivery_address .form-group').eq($(this).attr('data-sort')).before(this);
+          }
+      
+          if ($(this).attr('data-sort') > $('#tmd_delivery_address .form-group').length) {
+              $('#tmd_delivery_address .form-group:last').after(this);
+          }
+      
+          if ($(this).attr('data-sort') < -$('#tmd_delivery_address .form-group').length) {
+              $('#tmd_delivery_address .form-group:first').before(this);
+          }
+      });
+      //--></script>
+      <script type="text/javascript"><!--
+      $('#tmd_delivery_address button[id^=\'button-shipping-custom-field\']').on('click', function() {
+          var node = this;
+      
+          $('#form-upload').remove();
+      
+          $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+      
+          $('#form-upload input[name=\'file\']').trigger('click');
+      
+          if (typeof timer != 'undefined') {
+              clearInterval(timer);
+          }
+      
+          timer = setInterval(function() {
+              if ($('#form-upload input[name=\'file\']').val() != '') {
+                  clearInterval(timer);
+      
+                  $.ajax({
+                      url: 'index.php?route=tool/upload',
+                      type: 'post',
+                      dataType: 'json',
+                      data: new FormData($('#form-upload')[0]),
+                      cache: false,
+                      contentType: false,
+                      processData: false,
+                      beforeSend: function() {
+                          $(node).button('loading');
+                      },
+                      complete: function() {
+                          $(node).button('reset');
+                      },
+                      success: function(json) {
+                          $(node).parent().find('.text-danger').remove();
+      
+                          if (json['error']) {
+                              $(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
+                          }
+      
+                          if (json['success']) {
+                              alert(json['success']);
+      
+                              $(node).parent().find('input[name^=\'custom_field\']').attr('value', json['file']);
+                          }
+                      },
+                      error: function(xhr, ajaxOptions, thrownError) {
+                          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                      }
+                  });
+              }
+          }, 500);
+      });
+      //--></script>
+      <script type="text/javascript"><!--
+      $('.date').datetimepicker({
+          pickTime: false
+      });
+      
+      $('.time').datetimepicker({
+          pickDate: false
+      });
+      
+      $('.datetime').datetimepicker({
+          pickDate: true,
+          pickTime: true
+      });
+      //--></script>
+      <script type="text/javascript"><!--
+      $('#tmd_delivery_address select[name=\'country_id\']').on('change', function() {
+          let val = $('#tmd_delivery_address input[name="shipping_address"]:checked').val();
+          if( !val ) {
+              $.ajax({
+                  url: 'index.php?route=tmdqc/shipping_method/set',
+                  type: 'post',
+                  data: $('#tmd_delivery_address input[type=\'text\'], #tmd_delivery_address input[type=\'date\'], #tmd_delivery_address input[type=\'datetime-local\'], #tmd_delivery_address input[type=\'time\'], #tmd_delivery_address input[type=\'password\'], #tmd_delivery_address input[type=\'checkbox\']:checked, #tmd_delivery_address input[type=\'radio\']:checked, #tmd_delivery_address input[type=\'hidden\'], #tmd_delivery_address textarea, #tmd_delivery_address select'),
+                  beforeSend: function() {
+                      $('#tmd_delivery_address select[name=\'country_id\']').after(' <i class="fa fa-circle-o-notch fa-spin"></i>');
+                  },
+                  complete: function() {
+                      $('.fa-spin').remove();
+                  },
+                  success: function(json) {
+      
+                      $.ajax({
+                          url: 'index.php?route=tmdqc/shipping_method',
+                          dataType: 'html',
+                          success: function (html) {
+                              $('#tmd_shipping_method').html(html);
+                          }
+                      })
+                  },
+                  error: function(xhr, ajaxOptions, thrownError) {
+                      alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                  }
+              });
+          }
+      
+          $.ajax({
+              url: 'index.php?route=tmdqc/tmdcheckout/country&country_id=' + this.value,
+              dataType: 'json',
+              beforeSend: function() {
+                  $('#tmd_delivery_address select[name=\'country_id\']').after(' <i class="fa fa-circle-o-notch fa-spin"></i>');
+              },
+              complete: function() {
+                  $('.fa-spin').remove();
+              },
+              success: function(json) {
+                  if (json['postcode_required'] == '1') {
+                      $('#tmd_delivery_address input[name=\'postcode\']').parent().parent().addClass('required');
+                  } else {
+                      $('#tmd_delivery_address input[name=\'postcode\']').parent().parent().removeClass('required');
+                  }
+      
+                  html = '<option value=""> --- Выберите --- </option>';
+      
+                  if (json['zone'] && json['zone'] != '') {
+                      for (i = 0; i < json['zone'].length; i++) {
+                          html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+      
+                          if (json['zone'][i]['zone_id'] == '') {
+                              html += ' selected="selected"';
+                            }
+      
+                          html += '>' + json['zone'][i]['name'] + '</option>';
+                      }
+                  } else {
+                      html += '<option value="0" selected="selected"> --- Не выбрано --- </option>';
+                  }
+      
+                  $('#tmd_delivery_address select[name=\'zone_id\']').html(html);
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      $('#tmd_delivery_address select[name=\'country_id\']').trigger('change');
+      //--></script>
+      
+      </div></div><div class="col-lg-6 col-md-6 col-sm-6 "><div id="tmd_shipping_method"><div class="panel panel-default">
+          <div class="panel-heading">Способ доставки</div>
+      </div>
+      <div>
+          <label class="col-sm-12">
+                              <input class="pull-left" type="radio" name="shipping_method" value="flat.flat_np" checked="checked">
+               &nbsp; &nbsp;
+                              <span class="pull-left">&nbsp; &nbsp; Новая Почта</span>
+                      <span class="pull-right">+30 грн</span>
+          </label>
+      </div>
+      <div>
+          <label class="col-sm-12">
+                      <input class="pull-left" type="radio" name="shipping_method" value="pickup.pickup">
+               &nbsp; &nbsp;
+                              <span class="pull-left">&nbsp; &nbsp; Самовывоз</span>
+                      <span class="pull-right">+0 грн</span>
+          </label>
+      </div>
+      <div class="row ">
+      
+          
+      <!-- Start: injected by AdGuard -->
+      <script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1554880949.590959&amp;sb=0&amp;domain=convers.stpnnk.top&amp;mask=103" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=1554325632.210682" type="text/javascript" nonce="4E91C25FE014495B815BBDA6BFE2ECAA"></script>
+      <!-- End: injected by AdGuard -->
+      <script>
+              jQuery(document).ready(function () {
+                  let shipping_method = jQuery('[name="shipping_method"]:checked').val();
+                  manageChangeShippingMethod(shipping_method == 'flat.flat_np');
+      
+                  jQuery('[name="shipping_method"]').on('change', function (e) {
+                      manageChangeShippingMethod(e.target.value == 'flat.flat_np');
+                  });
+      
+                  function manageChangeShippingMethod(np = false) {
+                      if (np) {
+                          $('#npInputs').show();
+                          $('#npArea').val($('#newpost_warehouses').val());
+                          $('#commentArea textarea').val('');
+                          $('#commentArea').hide();
+                      } else {
+                          $('#npInputs').hide();
+                          $('#npArea').val('');
+                          $('#commentArea textarea').val('');
+                          $('#commentArea').show();
+                      }
+                  }
+      
+                  $('#newpost_warehouses').on('change', function (e) {
+                      $('#npArea').val(e.target.value);
+                  });
+              });
+          </script>
+          <div class="col-sm-12" id="npInputs">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group required">
+                          <label class="control-label" for="newpost_cities">Город</label>
+                          <input id="newpost_cities" placeholder="начните вводить название города" type="text" class="form-control">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group required">
+                          <label class="control-label" for="newpost_warehouses">Отделение</label>
+                          <select id="newpost_warehouses" class="form-control">
+                              <option disabled="" selected="">Выберите отделение</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+      
+              <script>
+                  $(function () {
+                      $("#newpost_cities").autocomplete({
+                          source: function (request, response) {
+                              if (request && ((request.term && request.term.length > 1) || (request.length > 1))) {
+                                  var params = {
+                                      'apiKey': 'd1dd49719c9d6659b8123acd2f7d4a68',
+                                      'modelName': 'Address',
+                                      'calledMethod': 'searchSettlements',
+                                      "methodProperties": {
+                                          "CityName": request.term ? request.term : request,
+                                          "Limit": 20
+                                      }
+                                  };
+      
+                                  $.ajax({
+                                      url: 'https://api.novaposhta.ua/v2.0/json/?' + $.param(params),
+                                      beforeSend: function (xhrObj) {
+                                          xhrObj.setRequestHeader('Content-Type', 'application/json');
+                                          return Number;
+                                      },
+                                      type: 'POST',
+                                      dataType: 'jsonp',
+                                      data: '{body}'
+                                  }).done(function (sdata) {
+                                      if (sdata['success'] && sdata['data'] && sdata['data'][0] && sdata['data'][0]['Addresses']) {
+                                          var addresses = sdata['data'][0]['Addresses'];
+                                          var newAddresses = [];
+                                          for (var i = 0; i < addresses.length; i++) {
+                                              newAddresses.push({
+                                                  id: addresses[i]['DeliveryCity'],
+                                                  label: addresses[i]['Present'],
+                                                  value: addresses[i]['DeliveryCity']
+                                              });
+                                          }
+                                          response(newAddresses);
+                                      } else {
+                                          response([]);
+                                      }
+                                  }).fail(function () {
+      
+                                  });
+                              }
+                          },
+                          minLength: 2,
+                          select: function (event, ui) {
+                              $("#newpost_cities").val(event.label);
+                              var params = {
+                                  'apiKey': 'd1dd49719c9d6659b8123acd2f7d4a68',
+                                  'modelName': 'AddressGeneral',
+                                  'calledMethod': 'getWarehouses',
+                                  "methodProperties": {
+                                      "Language": "ru",
+                                      "CityRef": event.id
+                                  }
+                              };
+      
+                              $.ajax({
+                                  url: 'https://api.novaposhta.ua/v2.0/json/?' + $.param(params),
+                                  beforeSend: function (xhrObj) {
+                                      xhrObj.setRequestHeader('Content-Type', 'application/json');
+                                      return Number;
+                                  },
+                                  type: 'POST',
+                                  dataType: 'jsonp',
+                                  data: '{body}'
+                              }).done(function (data) {
+                                  if (data['success'] && data['data']) {
+                                      $('#newpost_warehouses').html('');
+                                      $.each(data['data'], function (i, item) {
+                                          $('#newpost_warehouses').append($('<option>', {
+                                              value: event.label + ' ' + item.DescriptionRu,
+                                              text: item.DescriptionRu
+                                          }));
+                                      });
+                                      $('#npArea').val($('#newpost_warehouses').val());
+                                  }
+                              }).fail(function () {
+      
+                              });
+                          }
+                      });
+                  });
+              </script>
+          </div>
+          <div class="col-sm-12" id="commentArea" style="display: none;">
+              <label class="control-label">Добавить комментарий к заказу</label>
+              <textarea name="comment" id="npArea" rows="8" class="form-control"></textarea>
+          </div>
+      </div>
+      </div><div id="tmd_payment_method"><div class="panel panel-default">
+          <div class="panel-heading">Способ оплаты</div>
+      </div>
+        <label>
+                  <input type="radio" name="payment_method" value="cod" checked="checked">
+          &nbsp;
+              &nbsp;
+                      Оплата при получении		      </label>
+        <label>
+              <input type="radio" name="payment_method" value="liqpay">
+          &nbsp;
+              &nbsp;
+                      Карта Visa и MasterCard (LiqPay)		      </label>
+      <div class="row hide">
+          <div class="col-sm-12">
+              <label class="control-label">Добавить комментарий к заказу</label>
+              <textarea name="comment" rows="8" class="form-control"></textarea>
+          </div>
+      </div>
+      </div> </div></div><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 "><div id="tmd_confirmation"><div id="final-button"><div class="buttons clearfix"><div class="pull-right"><input type="button" value="Заказ" id="tmdbuttonorder" class="pay_btn" data-loading-text="Загрузка..."></div></div></div></div> </div></div>		</div>
+          </div>
+      </div>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        function toggleTopSearch() {
+            $('.header-search').toggleClass('header-search--open');
+        }
+
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1
+            });
+            $(".header-search__content").mouseleave(toggleTopSearch);
+        });
+    </script>
+</body>
+
+</html>

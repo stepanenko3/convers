@@ -9,18 +9,855 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="header-top__i">
+                    <div class="header-top-lang">
+                        <div onlick="changeLang('en')" class="header-top-lang__item header-top-lang__item--active">En</div>
+                        <div onlick="changeLang('Ru')" class="header-top-lang__item">Ru</div>
+                        <form action="/index.php?route=common/language/language" method="post" class="header-top-lang__form" id="form-language">
+                            <input type="hidden" name="code" value="" id="form-language-code" />
+                            <input type="hidden" name="redirect" value="/">
+                        </form>
+                    </div>
 
-
-
+                    <div class="header__menu">
+                        <a href="">Оплата</a>
+                        <a href="">Доставка</a>
+                        <a href="tel:0931112345">0931112345</a>
+                    </div>
     
+                    <div class="header-top__callback" onclick="toggleModal('callback')">
+                        <span class="icon-call"></span> Обратный звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="header-middle">
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+
+                <a href="" calss="header-middle__logo">
+                    <img src="/assets/img/logo.svg" />
+                </a>
+
+                <div id="cart" class="cart">
+                        <button type="button" data-toggle="dropdown" data-loading-text="Загрузка...">    
+                        <span class="not-empty icon-cart"></span>
+                        <div id="cart-total" class="badge">7</div></button>
+                        <ul class="dropdown-menu pull-right mini_cart">
+                              <li>
+                            <table class="table table-striped">
+                                      <tbody><tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo22"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct1-47x47.png" alt="Demo" title="Demo" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo22">Demo</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">1 500 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('314', '729');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo22"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct1-47x47.png" alt="Demo" title="Demo" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo22">Demo</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">1 500 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('315', '729');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo22"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct1-47x47.png" alt="Demo" title="Demo" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo22">Demo</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">1 500 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('316', '729');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">15 000 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('317', '730');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">15 000 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('318', '730');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">15 000 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('319', '730');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                      <tr>
+                                <td class="text-center table-cell-image">            <a href="https://convers.stpnnk.top/demo2"><img src="https://convers.stpnnk.top/image/cache/catalog/roduct2-47x47.png" alt="demo2" title="demo2" class="img-thumbnail"></a>
+                                  </td>
+                                <td class="text-left"><a href="https://convers.stpnnk.top/demo2">demo2</a>
+                                              </td>
+                                <td class="text-right">x 1</td>
+                                <td class="text-right">15 000 грн</td>
+                                <td class="text-center"><button type="button" onclick="cart.remove('320', '730');" title="Удалить" class="remove_item">
+                                  <img src="" alt="">
+                                </button></td>
+                              </tr>
+                                            </tbody></table>
+                          </li>
+                          <li>
+                            <div class="mini_cart_interface">
+                              <div class="total_info">
+                                          <p>
+                                  Сумма:
+                                  64 500 грн          </p>
+                                        </div>
+                              <p><a href="https://convers.stpnnk.top/checkout" class="pay_btn">Оформить заказ</a></p>
+                            </div>
+                          </li>
+                            </ul>
+                      </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-top-lang header-top-lang--mobile">
+                <div onlick="changeLang('en')" class="header-top-lang__item header-top-lang__item--active">En</div>
+                <div onlick="changeLang('Ru')" class="header-top-lang__item">Ru</div>
+                <form action="/index.php?route=common/language/language" method="post" class="header-top-lang__form" id="form-language">
+                    <input type="hidden" name="code" value="" id="form-language-code" />
+                    <input type="hidden" name="redirect" value="/">
+                </form>
+            </div>
+            
+            <div class="header-menu">
+                    <div class="header-menu-item">
+                        <div class="header-menu-item__link">Женщинам</div>
+                        <div class="header-menu-item__content">
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="header-menu-item">
+                    <div class="header-menu-item__link">Женщинам</div>
+                    <div class="header-menu-item__content">
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                    </div>
+            </div>
+            <div class="header-menu-item">
+                <div class="header-menu-item__link">Женщинам</div>
+                <div class="header-menu-item__content">
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                </div>
+        </div>
+        <div class="header-menu-item">
+            <div class="header-menu-item__link">Женщинам</div>
+            <div class="header-menu-item__content">
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+            </div>
+    </div>
+    <div class="header-menu-item">
+        <div class="header-menu-item__link">Женщинам</div>
+        <div class="header-menu-item__content">
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+        </div>
+</div>
+
+                <div class="header-search">
+                    <div class="header-search__btn" onclick="toggleTopSearch()">
+                        <span class="icon-search"></span>
+                    </div>
+                    <form class="header-search__content" method="GET" action="/search">
+                        <input type="text" name="s" placeholder="поиск...">
+                        <button type="submit"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+    
+                <div class="header-top__callback header-top__callback--mobile" onclick="toggleModal('callback')">
+                    <span class="icon-call"></span>
+                </div>
+    
+                <div class="header-mobile-menu" onclick="toggleModal('mobilemenu')">
+                    <span class="icon-call"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-slider owl-carousel">
+        <div class="home-slider__item" style="background-image: url(/assets/img/slider1.png)">
+            <div class="container">
+                <div class="home-slider__content">
+                    <div class="home-slider__title">
+                        Новые животные принты
+                    </div>
+                    <div class="home-slider__text">
+                        Будь ярким с Converse
+                    </div>
+                    <a class="home-slider__btn" href="#">
+                        КУПИТЬ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="home-slider__item" style="background-image: url(/assets/img/slider1.png)">
+            <div class="container">
+                <div class="home-slider__content">
+                    <div class="home-slider__title">
+                        Новые животные принты
+                    </div>
+                    <div class="home-slider__text">
+                        Будь ярким с Converse
+                    </div>
+                    <a class="home-slider__btn" href="#">
+                        КУПИТЬ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="h2">Новые поступления</div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__price">
+                        1 779 <span>грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__price">
+                        1 779 <span>грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__price">
+                        1 779 <span>грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__price">
+                        1 779 <span>грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__price">
+                        1 779 <span>грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/>
+        <div class="h2">Легендарные серии</div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="home-banner" src="/assets/img/banner1.png" />
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="home-banner" src="/assets/img/banner1.png" />
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="home-banner" src="/assets/img/banner1.png" />
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="home-banner" src="/assets/img/banner1.png" />
+                </a>
+            </div>
+        </div>
+
+        <br/><br/>
 
 
+        <div class="h2">Распродажа</div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                        <img class="product-card__img" src="/assets/img/product1.png" />
+                    </a>
+                    <a href="#" class="product-card__title">
+                        Chuck 70 Classic Low Top
+                    </a>
+                    <a href="#" class="product-card__category">
+                        Для женщин
+                    </a>
+                    <div class="product-card__options">
+                        <a href="#">4</a>
+                        <a href="#">4,5</a>
+                        <a href="#">5</a>
+                        <a href="#">5,5</a>
+                        <a href="#">6</a>
+                        <a href="#">6,5</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="product-card__discount">
+                        <div class="old">1 999 <span>грн</span></div>
+                        <div class="new">1 779 <span>грн</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/>
+        <div class="h2">Блог</div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" class="blog-card">
+                    <img src="/assets/img/blog1.png" class="blog-card__img" />
+                    <div class="blog-card__title">Тренды весна-лето 2019</div>
+                    <div class="blog-card__date">01.03.2019</div>
+                    <div class="blog-card__text">
+                        Тогда фабрика занималась исключительно производством белья и тканей. Крутой поворот случился позже. Спустя больше чем полвека, в 1973 году, бренд заключает контракт с 17-летним шведским теннисистом Бьорном Боргом...
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="blog-card">
+                    <img src="/assets/img/blog1.png" class="blog-card__img" />
+                    <div class="blog-card__title">Тренды весна-лето 2019</div>
+                    <div class="blog-card__date">01.03.2019</div>
+                    <div class="blog-card__text">
+                        Тогда фабрика занималась исключительно производством белья и тканей. Крутой поворот случился позже. Спустя больше чем полвека, в 1973 году, бренд заключает контракт с 17-летним шведским теннисистом Бьорном Боргом...
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="home-form">
+            <div class="row">
+                <div class="col-md-3 offset-md-7">
+                    <form class="form">
+                        <div class="h2">Всегда будь в курсе новостей и скидок!</div>
+                        <div class="form-input">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-input">
+                            <input type="email" name="email" placeholder="Ваша почта">
+                            <button type="submit"><span class="icon-arrow-right"></span></button>
+                        </div>
+                    </form>
+                </d>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="/assets/img/logo.svg" />
+        </div>
+
+        <div class="footer-menu-list">
+            <div class="footer-menu">
+                <a href="#">Converse</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Помощь</a>
+                <a href="#">Оплата</a>
+                <a href="#">Доставка</a>
+                <a href="#">Возврат</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Социальные сети</a>
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-menu mobile-menu--open">
+            <div class="mobile-menu__close" onclick="toggleMenu()"></div>
+        
+                    <a href="/pay">
+                    Оплата        </a>
+                    <a href="/delivery">
+                    Доставка        </a>
+                    <a href="tel:0669999999">
+                    0669999999        </a>
+            </div>
     <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        function toggleTopSearch() {
+            $('.header-search').toggleClass('header-search--open');
+        }
+
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1
+            });
+            $(".header-search__content").mouseleave(toggleTopSearch);
+        });
+    </script>
 </body>
 
 </html>

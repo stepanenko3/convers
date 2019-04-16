@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="header-top__i">
+                    <div class="header-top-lang">
+                        <div onlick="changeLang('en')" class="header-top-lang__item header-top-lang__item--active">En</div>
+                        <div onlick="changeLang('Ru')" class="header-top-lang__item">Ru</div>
+                        <form action="/index.php?route=common/language/language" method="post" class="header-top-lang__form" id="form-language">
+                            <input type="hidden" name="code" value="" id="form-language-code" />
+                            <input type="hidden" name="redirect" value="/">
+                        </form>
+                    </div>
+
+                    <div class="header__menu">
+                        <a href="">Оплата</a>
+                        <a href="">Доставка</a>
+                        <a href="tel:0931112345">0931112345</a>
+                    </div>
+    
+                    <div class="header-top__callback" onclick="toggleModal('callback')">
+                        <span class="icon-call"></span> Обратный звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="header-middle">
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+
+                <a href="" calss="header-middle__logo">
+                    <img src="/assets/img/logo.svg" />
+                </a>
+
+                <div class="cart">
+                    <span class="icon-cart"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-menu">
+                    <div class="header-menu-item">
+                        <div class="header-menu-item__link">Женщинам</div>
+                        <div class="header-menu-item__content">
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="header-menu-item">
+                    <div class="header-menu-item__link">Женщинам</div>
+                    <div class="header-menu-item__content">
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                    </div>
+            </div>
+            <div class="header-menu-item">
+                <div class="header-menu-item__link">Женщинам</div>
+                <div class="header-menu-item__content">
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                </div>
+        </div>
+        <div class="header-menu-item">
+            <div class="header-menu-item__link">Женщинам</div>
+            <div class="header-menu-item__content">
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+            </div>
+    </div>
+    <div class="header-menu-item">
+        <div class="header-menu-item__link">Женщинам</div>
+        <div class="header-menu-item__content">
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+        </div>
+</div>
+
+                <div class="header-search">
+                    <div class="header-search__btn" onclick="toggleTopSearch()">
+                        <span class="icon-search"></span>
+                    </div>
+                    <form class="header-search__content" method="GET" action="/search">
+                        <input type="text" name="s" placeholder="поиск...">
+                        <button type="submit"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="catalog-header">
+            <div></div>
+            <div class="catalog-header__title">
+                    Распродажа
+            </div>
+            <select>
+                <option>Сортировать</option>
+            </select>
+        </div>
+
+        <div class="row">
+                <div class="col-md-3">
+                        <ul class="sidebar-categories">
+                                <li>
+                                  <a href="https://convers.stpnnk.top/ipad" class=" with-child open">
+                                    iPad  </a>
+                                    <ul class="sidebar-categories__child">
+                                        <li>
+                                      <a href="https://convers.stpnnk.top/index.php?route=product/category&amp;path=455_479">
+                                        asddd      </a>
+                                    </li>
+                                        <li>
+                                      <a href="https://convers.stpnnk.top/index.php?route=product/category&amp;path=455_477">
+                                        Демо1      </a>
+                                    </li>
+                                      </ul>
+                                  </li>
+                                <li>
+                                  <a href="https://convers.stpnnk.top/sale" class="active with-child">
+                                    Распродажа  </a>
+                                    <ul class="sidebar-categories__child">
+                                        <li>
+                                      <a href="https://convers.stpnnk.top/index.php?route=product/category&amp;path=476_478">
+                                        Ltvj2      </a>
+                                    </li>
+                                      </ul>
+                                  </li>
+                                </ul>
+
+
+                        <div class="ocfilter" id="ocfilter">
+      <div class="hidden" id="ocfilter-button">
+        <button class="bdisabled" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка.."></button>
+      </div>
+      <div id="ocfilter-content">
+    
+    
+          
+          
+                
+                    <div class="ocfilter-option" id="option-30136">
+                <div class="option-name">
+                  demo2
+                                        <span id="left-value-30136">1</span>
+                            -&nbsp;<span id="right-value-30136">3</span>
+                                        <span class="slide"></span>
+                </div>
+    
+    
+    
+                        
+                <div class="option-values custom_filter">
+                
+                                                    <div id="scale-30136" class="scale ocf-target noUi-target noUi-ltr noUi-horizontal noUi-background" data-option-id="30136" data-start-min="1" data-start-max="3" data-range-min="1" data-range-max="3" data-element-min="#left-value-30136" data-element-max="#right-value-30136"><div class="noUi-base"><div class="noUi-origin noUi-connect noUi-draggable" style="left: 0%;"><div class="noUi-handle noUi-handle-lower"></div></div><div class="noUi-origin noUi-background" style="left: 100%;"><div class="noUi-handle noUi-handle-upper"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" style="left: 0.00000%">1</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 3.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 7.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 11.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 15.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 19.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 23.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 26.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 38.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 50.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" style="left: 50.00000%">2</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 53.84615%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 57.69231%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 61.53846%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 65.38462%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 69.23077%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 73.07692%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76.92308%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 80.76923%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 84.61538%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88.46154%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 92.30769%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 96.15385%"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100.00000%"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" style="left: 100.00000%">3</div></div></div>
+    
+                  
+                            </div>
+    
+                        </div>
+    
+          
+            
+                
+                    <div class="ocfilter-option" id="option-30133">
+                <div class="option-name">
+                  Цвет
+                                        <span class="slide"></span>
+                </div>
+    
+    
+    
+              
+    
+    <div class="option-values option-values--colors">
+    
+                  
+                            
+    
+                                
+                      <label id="v-301334286217070">
+                    <input type="checkbox" name="ocfilter_filter[30133]" value="https://convers.stpnnk.top/ipad/color/-f8e690" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/color/-f8e690" style="background: #f8e690"></a>
+                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301334286217071">
+                    <input type="checkbox" name="ocfilter_filter[30133]" value="https://convers.stpnnk.top/ipad/color/-ff6b6b" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/color/-ff6b6b" style="background: #ff6b6b"></a>
+                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301334286217072">
+                    <input type="checkbox" name="ocfilter_filter[30133]" value="https://convers.stpnnk.top/ipad/color/-55aede" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/color/-55aede" style="background: #55aede"></a>
+                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301334286217073">
+                    <input type="checkbox" name="ocfilter_filter[30133]" value="https://convers.stpnnk.top/ipad/color/-b968fa" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/color/-b968fa" style="background: #b968fa"></a>
+                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301334286217074">
+                    <input type="checkbox" name="ocfilter_filter[30133]" value="https://convers.stpnnk.top/ipad/color/-fefa47" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/color/-fefa47" style="background: #fefa47"></a>
+                  </label>
+    
+                                
+                
+                              </div>
+    
+    
+                        </div>
+    
+          
+            
+                
+                    <div class="ocfilter-option" id="option-30135">
+                <div class="option-name">
+                  demo
+                                        <span class="slide"></span>
+                </div>
+    
+    
+    
+                        
+                <div class="option-values custom_filter">
+                
+                            
+                  
+                            
+                    
+                    
+                                                  <label id="v-301354286217083">
+                    <input type="checkbox" name="ocfilter_filter[30135]" value="https://convers.stpnnk.top/ipad/demo/demo1" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/demo/demo1">demo1</a>
+                                  </label>
+                                
+                
+                  
+                            
+                    
+                    
+                                                  <label id="v-301354286217084">
+                    <input type="checkbox" name="ocfilter_filter[30135]" value="https://convers.stpnnk.top/ipad/demo/demo2" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/demo/demo2">demo2</a>
+                                  </label>
+                                
+                
+                  
+                            
+                    
+                    
+                                                  <label id="v-301354286217085">
+                    <input type="checkbox" name="ocfilter_filter[30135]" value="https://convers.stpnnk.top/ipad/demo/demo3" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/demo/demo3">demo3</a>
+                                  </label>
+                                
+                
+                  
+                  
+                            </div>
+    
+                        </div>
+    
+          
+            
+                
+                    <div class="ocfilter-option" id="option-30134">
+                <div class="option-name">
+                  Размер
+                                        <span class="slide"></span>
+                </div>
+    
+    
+    
+                      
+              <div class="option-values option-values--sizes">
+    
+                  
+                            
+    
+                                
+                      <label id="v-301344286217075">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/5" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/5">5</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217081">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/8" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/8">8</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217076">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/5-5" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/5-5">5,5</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217082">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/9" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/9">9</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217077">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/6" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/6">6</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217078">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/6-5" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/6-5">6,5</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217079">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/7" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/7">7</a>
+                                  </label>
+    
+                                
+                
+                  
+                            
+    
+                                
+                      <label id="v-301344286217080">
+                    <input type="checkbox" name="ocfilter_filter[30134]" value="https://convers.stpnnk.top/ipad/size/7-5" class="ocf-target">
+                    <a href="https://convers.stpnnk.top/ipad/size/7-5">7,5</a>
+                                  </label>
+    
+                                
+                
+                              </div>
+    
+                        </div>
+    
+          
+                </div>
+      </div>
+    <script type="text/javascript"><!--
+    $(function() {
+        var options = {
+        mobile: true,
+        php: {
+            showPrice    : 0,
+            showCounter  : 0,
+                manualPrice  : 1,
+          link         : 'https://convers.stpnnk.top/ipad',
+            path         : '455',
+            params       : '',
+            index        : 'filter_ocfilter'
+          },
+        text: {
+            show_all: 'Показать все',
+            hide    : 'Скрыть',
+            load    : 'Загрузка...',
+                any     : 'Все',
+            select  : 'Укажите параметры'
+          }
+        };
+    
+      if ($('#ocfilter').is(':hidden')) {
+        $('#navbar-ocfilter').html($('#ocfilter').remove().get(0).outerHTML);
+    
+        var html = $('#ocfilter-mobile').remove().get(0).outerHTML;
+    
+        $('.breadcrumb').after(html);
+    
+        options['mobile'] = true;
+      }
+    
+      setTimeout(function() {
+        $('#ocfilter').ocfilter(options);
+      }, 1);
+    });
+    --></script>
+    
+    
+    <script>
+      $( ".option-name" ).click(function() {
+        $(this).toggleClass('closed');
+        $(this).siblings(".option-values").slideToggle( "slow", function() {
+          // Animation complete.
+        });
+    });
+    
+          $("#column-left button").click(function() {
+            console.log("click");
+            $("#ocfilter-content").slideToggle( "slow", function() {
+            });
+          });
+    </script>              </div>
+            <div class="col-md-9">
+
+                <div class="options-block">
+                    <div class="option-block">
+                        <div class="option__name">Производитель:</div>
+                        <div class="option__values">
+                            <a href="#" class="value">DAB <span class="icon-close"></span></a>
+                            <a href="#" class="value">DAB <span class="icon-close"></span></a>
+                        </div>
+                    </div>
+                    <div class="option-block">
+                        <div class="option__name">Материал корпуса</div>
+                        <div class="option__values">
+                            <a href="#" class="value">Чугун <span class="icon-close"></span></a>
+                            <a href="#" class="value">Чугун <span class="icon-close"></span></a>
+                        </div>
+                    </div>
+                    <a href="#" class="options-block__rest">Сбросить все фильтры</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <a href="#">
+                                <img class="product-card__img" src="/assets/img/product1.png" />
+                            </a>
+                            <a href="#" class="product-card__title">
+                                Chuck 70 Classic Low Top
+                            </a>
+                            <a href="#" class="product-card__category">
+                                Для женщин
+                            </a>
+                            <div class="product-card__options">
+                                <a href="#">4</a>
+                                <a href="#">4,5</a>
+                                <a href="#">5</a>
+                                <a href="#">5,5</a>
+                                <a href="#">6</a>
+                                <a href="#">6,5</a>
+                                <a href="#">7</a>
+                            </div>
+                            <div class="product-card__price">
+                                1 779 <span>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="pagination">
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&gt;|</a></li>
+        </ul>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="/assets/img/logo.svg" />
+        </div>
+
+        <div class="footer-menu-list">
+            <div class="footer-menu">
+                <a href="#">Converse</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Помощь</a>
+                <a href="#">Оплата</a>
+                <a href="#">Доставка</a>
+                <a href="#">Возврат</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Социальные сети</a>
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        function toggleTopSearch() {
+            $('.header-search').toggleClass('header-search--open');
+        }
+
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1
+            });
+            $(".header-search__content").mouseleave(toggleTopSearch);
+        });
+    </script>
+</body>
+
+</html>

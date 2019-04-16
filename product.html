@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="header-top__i">
+                    <div class="header-top-lang">
+                        <div onlick="changeLang('en')" class="header-top-lang__item header-top-lang__item--active">En</div>
+                        <div onlick="changeLang('Ru')" class="header-top-lang__item">Ru</div>
+                        <form action="/index.php?route=common/language/language" method="post" class="header-top-lang__form" id="form-language">
+                            <input type="hidden" name="code" value="" id="form-language-code" />
+                            <input type="hidden" name="redirect" value="/">
+                        </form>
+                    </div>
+
+                    <div class="header__menu">
+                        <a href="">Оплата</a>
+                        <a href="">Доставка</a>
+                        <a href="tel:0931112345">0931112345</a>
+                    </div>
+    
+                    <div class="header-top__callback" onclick="toggleModal('callback')">
+                        <span class="icon-call"></span> Обратный звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="header-middle">
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+
+                <a href="" calss="header-middle__logo">
+                    <img src="/assets/img/logo.svg" />
+                </a>
+
+                <div class="cart">
+                    <span class="icon-cart"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-menu">
+                    <div class="header-menu-item">
+                        <div class="header-menu-item__link">Женщинам</div>
+                        <div class="header-menu-item__content">
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                                <div class="header-menu-item__list">
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                        <a href="#">Одежда</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="header-menu-item">
+                    <div class="header-menu-item__link">Женщинам</div>
+                    <div class="header-menu-item__content">
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                            <div class="header-menu-item__list">
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                                    <a href="#">Одежда</a>
+                            </div>
+                    </div>
+            </div>
+            <div class="header-menu-item">
+                <div class="header-menu-item__link">Женщинам</div>
+                <div class="header-menu-item__content">
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                        <div class="header-menu-item__list">
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                                <a href="#">Одежда</a>
+                        </div>
+                </div>
+        </div>
+        <div class="header-menu-item">
+            <div class="header-menu-item__link">Женщинам</div>
+            <div class="header-menu-item__content">
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+                    <div class="header-menu-item__list">
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                            <a href="#">Одежда</a>
+                    </div>
+            </div>
+    </div>
+    <div class="header-menu-item">
+        <div class="header-menu-item__link">Женщинам</div>
+        <div class="header-menu-item__content">
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+                <div class="header-menu-item__list">
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                        <a href="#">Одежда</a>
+                </div>
+        </div>
+</div>
+
+                <div class="header-search">
+                    <div class="header-search__btn" onclick="toggleTopSearch()">
+                        <span class="icon-search"></span>
+                    </div>
+                    <form class="header-search__content" method="GET" action="/search">
+                        <input type="text" name="s" placeholder="поиск...">
+                        <button type="submit"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <div class="row">
+                    <div class="col-md-7">
+                        <a href="#" class="product-general-image">
+                            <img src="/assets/img/product2.png" />
+                        </a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="product-additional-image">
+                                    <img src="/assets/img/product2.png" />
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="product-additional-image">
+                                    <img src="/assets/img/product2.png" />
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="product-additional-image">
+                                    <img src="/assets/img/product2.png" />
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="product-additional-image">
+                                    <img src="/assets/img/product2.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h1 class="product__title">Chuck 40 Archive Print High-Top</h1>
+                        <a href="#" class="product__category">Для женщин</a>
+                        <div class="product__rating">
+                            <div class="stars">
+                                <span class="icon-star active"></span>
+                                <span class="icon-star active"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                            </div>
+                            <span>Отзывы (2)</span>
+                        </div>
+
+                        <div class="product__price">
+                            2799 грн
+                        </div>
+
+                        <div class="product-options">
+                                                            
+                                <span>Цвет</span>
+                                <div class="product-options__item product-options__item--colors required" id="input-option3">
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[3]" value="14" checked="">
+
+                                            
+                                            <span class="value" style="background:#fefa47">
+                                                #fefa47                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[3]" value="11">
+
+                                            
+                                            <span class="value" style="background:#55aede">
+                                                #55aede                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[3]" value="15">
+
+                                            
+                                            <span class="value" style="background:#ff6b6b">
+                                                #ff6b6b                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[3]" value="12">
+
+                                            
+                                            <span class="value" style="background:#b968fa">
+                                                #b968fa                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[3]" value="13">
+
+                                            
+                                            <span class="value" style="background:#f8e690">
+                                                #f8e690                                            </span>
+
+                                                                                    </label>
+                                                                    </div>
+
+                                    
+                                                                
+                                                                
+                                <span>Размер</span>
+                                <div class="product-options__item product-options__item--sizes required" id="input-option2">
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="10" checked="">
+
+                                            
+                                            <span class="value">
+                                                8                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="9">
+
+                                            
+                                            <span class="value">
+                                                8                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="3">
+
+                                            
+                                            <span class="value">
+                                                5                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="6">
+
+                                            
+                                            <span class="value">
+                                                6,5                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="8">
+
+                                            
+                                            <span class="value">
+                                                7,5                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="4">
+
+                                            
+                                            <span class="value">
+                                                5,5                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="5">
+
+                                            
+                                            <span class="value">
+                                                6                                            </span>
+
+                                                                                    </label>
+                                                                            <label>
+                                        
+                                            <input type="radio" name="option[2]" value="7">
+
+                                            
+                                            <span class="value">
+                                                7                                            </span>
+
+                                                                                    </label>
+                                                                    </div>
+
+                                    
+                                                                
+                                                                                                    
+                        </div>
+
+
+                        <div class="product-buy">
+                            <a href="#" onclick="toggleModal('oneclick')">
+                                    КУПИТЬ В 1 КЛИК
+                            </a>
+                            <a href="#">
+                                    ДОБАВИТЬ В КОРЗИНУ
+                            </a>
+                        </div>
+
+                        <div class="product-links">
+                            <a onclick="toggleModal('pay')">Оплата</a>
+                            <a onclick="toggleModal('delivery')">Доставка</a>
+                            <a onclick="toggleModal('return')">Возврат</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal modal--pay">
+    <div class="modal__bg" onclick="toggleModal('pay')"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="toggleModal('pay')"></div>
+        <div class="modal__header">Оплата</div>
+        <div class="modal__text">
+            Оплата товара
+            <br/><br/>
+            Оплатить товары, заказанные через интернет-магазин ALLSTARS.UA, Вы можете:
+            <br/><br/>
+            При получении товара в отделении «Новой Почты» – оплата наличными или банковской картой «Visa/MasterCard»;
+            <br/><br/>
+            Вы можете оплатить Ваш заказ на сайте ALLSTARS.UA банковской картой Visa/MasterCard только после подтверждения наличия товара менеджером интернет-магазина. Далее Вам необходимо зайти в «Личный кабинет», найти Ваш заказ в «Истории заказов», нажать кнопку «Подробнее» и провести оплату. Подтвержденный заказ должен быть оплачен на протяжении двух дней;
+            <br/><br/>
+            Для получения товара по Вашему адресу, курьером «Новой Почты» – предоплата товара банковской картой Visa/MasterCard;
+            Оплата забронированного товара осуществляется только в магазине, в котором был забронирован товар.
+        </div>
+    </div>
+</div>
+    
+<div class="modal modal--delivery">
+    <div class="modal__bg" onclick="toggleModal('delivery')"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="toggleModal('delivery')"></div>
+        <div class="modal__header">Доставка</div>
+        <div class="modal__text">
+            Оплата товара
+            <br/><br/>
+            Оплатить товары, заказанные через интернет-магазин ALLSTARS.UA, Вы можете:
+            <br/><br/>
+            При получении товара в отделении «Новой Почты» – оплата наличными или банковской картой «Visa/MasterCard»;
+            <br/><br/>
+            Вы можете оплатить Ваш заказ на сайте ALLSTARS.UA банковской картой Visa/MasterCard только после подтверждения наличия товара менеджером интернет-магазина. Далее Вам необходимо зайти в «Личный кабинет», найти Ваш заказ в «Истории заказов», нажать кнопку «Подробнее» и провести оплату. Подтвержденный заказ должен быть оплачен на протяжении двух дней;
+            <br/><br/>
+            Для получения товара по Вашему адресу, курьером «Новой Почты» – предоплата товара банковской картой Visa/MasterCard;
+            Оплата забронированного товара осуществляется только в магазине, в котором был забронирован товар.
+        </div>
+    </div>
+</div>
+    
+<div class="modal modal--return">
+    <div class="modal__bg" onclick="toggleModal('return')"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="toggleModal('return')"></div>
+        <div class="modal__header">Возврат</div>
+        <div class="modal__text">
+            Оплата товара
+            <br/><br/>
+            Оплатить товары, заказанные через интернет-магазин ALLSTARS.UA, Вы можете:
+            <br/><br/>
+            При получении товара в отделении «Новой Почты» – оплата наличными или банковской картой «Visa/MasterCard»;
+            <br/><br/>
+            Вы можете оплатить Ваш заказ на сайте ALLSTARS.UA банковской картой Visa/MasterCard только после подтверждения наличия товара менеджером интернет-магазина. Далее Вам необходимо зайти в «Личный кабинет», найти Ваш заказ в «Истории заказов», нажать кнопку «Подробнее» и провести оплату. Подтвержденный заказ должен быть оплачен на протяжении двух дней;
+            <br/><br/>
+            Для получения товара по Вашему адресу, курьером «Новой Почты» – предоплата товара банковской картой Visa/MasterCard;
+            Оплата забронированного товара осуществляется только в магазине, в котором был забронирован товар.
+        </div>
+    </div>
+</div>
+    
+<div class="modal modal--sizes">
+    <div class="modal__bg" onclick="toggleModal('sizes')"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="toggleModal('sizes')"></div>
+        <img src="/assets/img/sizes.png" />
+    </div>
+</div>
+    
+    <div class="modal modal--oneclick">
+    
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="/assets/img/logo.svg" />
+        </div>
+
+        <div class="footer-menu-list">
+            <div class="footer-menu">
+                <a href="#">Converse</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Помощь</a>
+                <a href="#">Оплата</a>
+                <a href="#">Доставка</a>
+                <a href="#">Возврат</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Социальные сети</a>
+                <div class="social-list">
+                    <a href=""><span class="icon-telegram"></span></a>
+                    <a href=""><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        function toggleModal(modal) {
+            $(".modal--" + modal).toggleClass('modal--open');
+        }
+
+        function toggleTopSearch() {
+            $('.header-search').toggleClass('header-search--open');
+        }
+
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1
+            });
+            $(".header-search__content").mouseleave(toggleTopSearch);
+        });
+    </script>
+</body>
+
+</html>
