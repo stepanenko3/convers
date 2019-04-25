@@ -6556,10 +6556,6 @@ body {
   font-weight: 600;
 }
 
-.checkout-cart__image {
-  width: 100%;
-}
-
 .checkout-cart-control {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6774,6 +6770,7 @@ body {
 .checkout-radio__price {
   font-weight: bold;
   margin-left: 7px;
+  display: none;
 }
 
 .checkout-radio__title {
